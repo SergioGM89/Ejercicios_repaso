@@ -25,6 +25,16 @@ function hasPlace (dir){ return (dir.pais && dir.ciudad && dir.direccion);}
 function hasTelephone(dir) {return(dir.movil || dir.fijo);}
 function hasRegionOrCP(dir){return (dir.region || dir.cp);}
 
+/*
+No está mal, pero podrías haber creado una función que lo englobara en vez de usar una función arrow anónima
+Por ejemplo:
+const direccionValida = direction => (hasPlace(direction) && hasTelephone(direction) && hasRegionOrCP(direction))
+
+y luego:
+let result = direcciones.filter(direccionValida);
+
+Queda bastante más legible
+*/
 let result = direcciones.filter(direction => (hasPlace(direction) && hasTelephone(direction) && hasRegionOrCP(direction)));
 
 console.log(result);

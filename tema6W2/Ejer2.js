@@ -1,5 +1,7 @@
 function map(array, funcion) {
     let newArray = [];
+    // Trampa, has usado bucles.
+    // Prueba con reduce
     for (let i = 0; i < array.length; i++) {
         newArray[i] = funcion(array[i]);
     }
