@@ -1,3 +1,4 @@
+// Mira el comentario del ejercicio 2 sobre las especificaciones, el resto bien
 function lazyMultiply(...n) {
     if (n.length === 2) {
         console.log(n[0]*n[1]);
