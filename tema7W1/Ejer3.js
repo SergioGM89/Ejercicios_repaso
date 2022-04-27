@@ -3,6 +3,7 @@ const asyncRequest = require(`./asyncRequest`);
 function cutriFetch(resource) {
     const promise = new Promise(function (resolve, reject) {
         asyncRequest(resource, (value) => resolve(value));
+        // Podrías quitar los paréntesis alrededor de value
     });
     return promise;
 }
