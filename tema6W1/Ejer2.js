@@ -1,3 +1,15 @@
+
+/*
+Está bien planteado pero lee las especificaciones. La función no debe
+imprimir el id, sino devolverlo. Tendría que usarse así:
+
+const LEN3ID = createIDGenerator(3);
+console.log(LEN3ID());
+console.log(LEN3ID());
+...
+
+Ten cuidado con estas cosas en el examen
+*/
 function createIDGenerator(large) {
     let id = 0;
 
