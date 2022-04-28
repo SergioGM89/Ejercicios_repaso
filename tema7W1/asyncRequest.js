@@ -1,11 +1,11 @@
-const DEFAULT_RESOURCES = {
+const MIS_RECURSOS = {
     "resource1": "The first resource",
     "resource2": "The second resource",
     "resource3": "The third resource",
     "whatINeed": "resource2"
 }
 
-function asyncRequest(resource, callback, resources = DEFAULT_RESOURCES) {
+function asyncRequest(resource, callback, resources = MIS_RECURSOS) {
     const MIN_DELAY = 1_000;
     const RANDOM_DELAY = 2_000;
 
