@@ -3,11 +3,11 @@ import { searchCharacter } from "./searchCharacter.js";
 
 async function getCharactersOfEpisode(episode, charactersNotRepeat) {
 
-    await episode.characters.map(async (character) => {
+    await episode.characters.forEach((character) => {
         console.log(!charactersNotRepeat.has(character));
-        if (!charactersNotRepeat.has(await character)) {
-            charactersNotRepeat.add(await character);
-        }
+        // if (!charactersNotRepeat.has( character)) {
+            charactersNotRepeat.add(character);
+        // }
     });
 
     let characters = Array.from(charactersNotRepeat);
